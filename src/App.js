@@ -27,7 +27,7 @@ function App() {
                         <Create/>
                     </Route>
                     <Route path="/collection" >
-                        <Collection/>
+                        <Collection/>  
                     </Route>
                     <Route path="/details" >
                         <Details/>
@@ -35,7 +35,6 @@ function App() {
                     <Route path="/about" >
                         <About/>
                     </Route>
-
                     <Route  >
                         <h3 className="d-flex justify-content-center text-center align-items-center fw-500" style={{minHeight:"80vh"}}>404 | PAGE NOT FOUND </h3>
                     </Route>
