@@ -607,3 +607,7 @@ select {
 .border-bottom-white{
   border-bottom: 1px solid rgba(229, 232, 235, 0.25);
 }
+
+.red{
+background: #000;
+}
