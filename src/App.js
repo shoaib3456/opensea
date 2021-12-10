@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Home from './Components/Home'
 import Explore from './Components/Explore'
+import HeplCenter from './Components/HeplCenter'
 import Create from './Components/Create'
 import Collection from './Components/Collection'
 import Details from './Components/Details'
@@ -34,6 +35,9 @@ function App() {
                     </Route>
                     <Route path="/about" >
                         <About/>
+                    </Route>
+                    <Route path="/help-center" >
+                        <HeplCenter/>
                     </Route>
                     <Route  >
                         <h3 className="d-flex justify-content-center text-center align-items-center fw-500" style={{minHeight:"80vh"}}>404 | PAGE NOT FOUND </h3>
