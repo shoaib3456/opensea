@@ -15,7 +15,7 @@ export default function About() {
                 </div>
             </div>
 
-            <div className="container">
+            <div className="container py-5">
                 <div class="d-flex justify-content-between flex-wrap mx-0 my-4 px-lg-5 px-2 pt-4">
                     <div className=" p-2 col">
                         <div className="d-flex flex-column align-items-center">
