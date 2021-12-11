@@ -608,6 +608,10 @@ select {
   border-bottom: 1px solid rgba(229, 232, 235, 0.25);
 }
 
-.red{
-background: #000;
+.background{
+  width: 100%;
+  height: 300px;
+  background-color: wheat;
+  background-image: url(https://theme.zdassets.com/theme_assets/10680073/c6e28229deb7e53544d30abfe704bb5762a576ef.png);
 }
+
