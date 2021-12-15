@@ -1,9 +1,14 @@
-import React from "react";
+import { React , useEffect } from "react";
 import { Carousel } from '@trendyol-js/react-carousel';
 import ExploreCard from "./Elements/ExploreCard";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 
 export default function About() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className="px-lg-5 px-4">
       <div className="row mx-0 mb-4">
@@ -224,7 +229,7 @@ export default function About() {
         You might have read about us in the news
       </h2>
       <h6 class="text-center text-faded pt-2">
-      If not, here are just a few stories about OpenSea</h6>
+        If not, here are just a few stories about OpenSea</h6>
       <div class="row mx-0 w-100 my-5  ">
         <Carousel responsive={false} show={3} slide={1} infinite={false} transition={0.5} rightArrow={<div className="arrow-right"><MdKeyboardArrowRight /></div>} leftArrow={<div className="arrow-right"><MdKeyboardArrowLeft /></div>}>
           <ExploreCard slick={1} />

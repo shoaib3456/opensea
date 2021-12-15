@@ -1,8 +1,10 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 
 export default function ExploreCard(props) {
+    const history  = useHistory();
     return (
-        <div className={props.slick == 1 ? "p-2 col-12": " col-lg-4 col-md-3 p-3 col-12"}>
+        <div className={props.slick == 1 ? "p-2 col-12": " col-lg-4 col-md-3 p-3 col-12"} onClick={()=>history.push("/collection")}>
             <div className="explore-card">
                 <div className="top">
                     <img src={process.env.PUBLIC_URL + "images/lion.png"} alt="" />

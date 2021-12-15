@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch,Route ,useHistory} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Home from './Components/Home'
@@ -18,61 +18,69 @@ import Settings from './Components/Settings'
 import Newsletter from './Components/Newsletter'
 import Header from './Components/Elements/Header'
 import Footer from './Components/Elements/Footer'
+import { useEffect } from 'react';
 
 
 function App() {
+
+    const history = useHistory();
+    useEffect(() => {
+        console.log("2");
+    }, [history]);
     return (
+
+
         <>
             <Router>
                 <Header />
                 <Switch>
                     <Route path="/" exact>
-                        <Home/>
+                        <Home />
                     </Route>
                     <Route path="/explore" >
-                        <Explore/>
+                        <Explore />
                     </Route>
                     <Route path="/create" >
-                        <Create/>
+                        <Create />
                     </Route>
                     <Route path="/collection" >
-                        <Collection/>  
+                        <Collection />
                     </Route>
                     <Route path="/details" >
-                        <Details/>
+                        <Details />
                     </Route>
                     <Route path="/about" >
-                        <About/>
+                        <About />
                     </Route>
                     <Route path="/help-center" >
-                        <HeplCenter/>
+                        <HeplCenter />
                     </Route>
                     <Route path="/newsletter" >
-                        <Newsletter/>
+                        <Newsletter />
                     </Route>
                     <Route path="/account" >
-                        <Account/>
+                        <Account />
                     </Route>
                     <Route path="/ranking" >
-                        <Ranking/>
+                        <Ranking />
                     </Route>
                     <Route path="/activity" >
-                        <Activity/>
+                        <Activity />
                     </Route>
                     <Route path="/login" >
-                        <Login/>
+                        <Login />
                     </Route>
                     <Route path="/my-collections" >
-                        <MyCollections/>
+                        <MyCollections />
                     </Route>
                     <Route path="/create-collection" >
-                        <CreateCollection/>
+                        <CreateCollection />
                     </Route>
                     <Route path="/settings" >
-                        <Settings/>
+                        <Settings />
                     </Route>
                     <Route  >
-                        <h3 className="d-flex justify-content-center text-center align-items-center fw-500" style={{minHeight:"80vh"}}>404 | PAGE NOT FOUND </h3>
+                        <h3 className="d-flex justify-content-center text-center align-items-center fw-500" style={{ minHeight: "80vh" }}>404 | PAGE NOT FOUND </h3>
                     </Route>
                 </Switch>
 
