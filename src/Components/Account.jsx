@@ -1,15 +1,17 @@
 import { React, useState } from 'react'
 import { BiFilter } from "react-icons/bi";
 import { Accordion } from "react-bootstrap";
-import { AiOutlineArrowLeft,AiOutlineArrowRight, AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineArrowLeft, AiOutlineArrowRight, AiOutlineSearch } from "react-icons/ai";
 import { BiListUl } from "react-icons/bi";
-import { BsFillGrid3X3GapFill, BsFillGridFill, BsSuitHeart } from "react-icons/bs";
+import { RiShareBoxLine } from "react-icons/ri";
+import { BsFillGrid3X3GapFill, BsFillGridFill, BsShareFill } from "react-icons/bs";
 import Card1 from "./Elements/Card1";
 
-export default function Collection() {
+export default function Account() {
 
     const [grid, setgrid] = useState(0)
     const [sidebar, setsidebar] = useState(1)
+    const [tabs, settabs] = useState(1)
     return (
         <>
             <div className="banner-img">
@@ -18,40 +20,23 @@ export default function Collection() {
 
             <div className="d-flex flex-column align-items-center">
                 <img src={process.env.PUBLIC_URL + "images/collection-logo.jpg"} className="collection-logo" alt="" />
-                <h1 className="mt-3 text-center">Ape Kids Club (AKC)</h1>
-                <div>
-                    <span className="me-1">Created by</span>
-                    <a href="">ApeKidsClubTeam</a>
-                </div>
-                <div className="d-flex flex-wrap mt-4">
-                    <div className="d-flex flex-column align-items-center px-lg-4 px-2">
-                        <h2 className="fw-600 mb-0">10.0K</h2>
-                        <span className="text-small-2">items</span>
-                    </div>
-                    <div className="d-flex flex-column align-items-center px-lg-4 px-2">
-                        <h2 className="fw-600 mb-0">5.0K</h2>
-                        <span className="text-small-2">owners</span>
-                    </div>
-                    <div className="d-flex flex-column align-items-center px-lg-4 px-2">
-                        <h2 className="fw-600 mb-0">0.52K</h2>
-                        <span className="text-small-2">floor price</span>
-                    </div>
-                    <div className="d-flex flex-column align-items-center px-lg-4 px-2">
-                        <h2 className="fw-600 mb-0">3.4K</h2>
-                        <span className="text-small-2">volume traded</span>
-                    </div>
+                <h2 className="mt-3 fw-600 text-center">Unamed</h2>
+                <span className="me-1 fs-5 text-faded">0x1800...f80e</span>
+                <span className="me-1 fs-5 text-faded">Joined December 2021</span>
+                <div className="social-icons mt-3">
+                    {/* <a href=""><RiShareBoxLine /></a> */}
                 </div>
             </div>
 
-            <div className="row justify-content-center mx-0 mt-4">
-                <p className="col-lg-8  col-12 text-center text-faded">
-                    In a magical world where apes ruled the metaverse, a magical thousand-year-old tree sprouted cute baby apes. A flock of storks were the loyal companions of the thousand-year-old tree. One sunny day, a total of 9999 baby apes were born. Storks followed their inner call and delivered all the baby apes. The families were so grateful and elated that they wanted even more baby apes. All were delivered and all lived a joyous life with their parents.
-                    <br />
-                    As the parents were busy navigating the metaverse and the kid apes grew up, they left their kid apes with Victorior, the friendliest teacher in the whole metaverse. Victorior was beloved by the kid apes since he is a talented art teacher who spreads his love through art.
-                </p>
+            <div className="tabs mt-4 justify-content-lg-start justify-content-center flex-wrap ps-lg-3">
+                <span onClick={() => { settabs(1) }} className={tabs == 1 && "active"}>Collected</span>
+                <span onClick={() => { settabs(2) }} className={tabs == 2 && "active"}>Created</span>
+                {/* <span onClick={() => { settabs(3) }} className={tabs == 3 && "active"}>Favorited</span> */}
+                <span onClick={() => { settabs(3) }} className={tabs == 3 && "active"}>Activity</span>
+                <span onClick={() => { settabs(4) }} className={tabs == 4 && "active"}>Offers</span>
             </div>
 
-            <div className={sidebar == 1 ? "row mx-0 border-top mt-4" : "d-flex mx-0 border-top mt-4"}>
+            <div className={sidebar == 1 ? "row mx-0 border-top mt-4" : "d-flex mx-0 mt-2"}>
                 {sidebar == 1 ?
                     <div className="col-lg-3 px-0">
                         <div>

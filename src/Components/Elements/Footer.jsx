@@ -5,7 +5,7 @@ import { FaDiscord, FaRedditAlien } from 'react-icons/fa'
 
 export default function Footer() {
     return (
-        <div className="footer">
+        <div className="footer mt-5">
             <div className="container">
                 <div className="row mx-0 py-lg-5 py-3 border-bottom-white ">
                     <div className="col-lg-6 col-12 d-flex flex-column pt-lg-0 pt-2">
@@ -37,30 +37,30 @@ export default function Footer() {
                         <div className="row mx-0">
                             <div className="d-flex col-lg-3 col-md-6 col-6 flex-column ps-0 pt-lg-0 pt-3">
                                 <span className="fw-600">Marketplace</span>
-                                <Link to='all-nft' className='text-light text-small-3 pt-2'>All NFTs</Link>
-                                <Link to='new' className='text-light text-small-3 pt-2'>New</Link>
-                                <Link to='art' className='text-light text-small-3 pt-2'>Art</Link>
-                                <Link to='musice' className='text-light text-small-3 pt-2'>Music</Link>
-                                <Link to='sports' className='text-light text-small-3 pt-2'>Sports</Link>
+                                <Link to='explore' className='text-light text-small-3 pt-2'>All NFTs</Link>
+                                <Link to='explore' className='text-light text-small-3 pt-2'>New</Link>
+                                <Link to='explore' className='text-light text-small-3 pt-2'>Art</Link>
+                                <Link to='explore' className='text-light text-small-3 pt-2'>Music</Link>
+                                <Link to='explore' className='text-light text-small-3 pt-2'>Sports</Link>
                             </div>
                             <div className="d-flex col-lg-3 col-md-6 col-6 flex-column ps-0 pt-lg-0 pt-3">
                                 <span className="fw-600">My Account</span>
-                                <Link to='profile' className='text-light text-small-3 pt-2'>Profile</Link>
-                                <Link to='favourite' className='text-light text-small-3 pt-2'>Favorites</Link>
+                                <Link to='account' className='text-light text-small-3 pt-2'>Profile</Link>
+                                {/* <Link to='favourite' className='text-light text-small-3 pt-2'>Favorites</Link> */}
                                 <Link to='my-collections' className='text-light text-small-3 pt-2'>My Collections</Link>
                                 <Link to='settings' className='text-light text-small-3 pt-2'>Settings</Link>
                             </div>
                             <div className="d-flex col-lg-3 col-md-6 col-6 flex-column ps-0 pt-lg-0 pt-3">
                                 <span className="fw-600">Resources</span>
                                 <Link to='help-center' className='text-light text-small-3 pt-2'>Help Center</Link>
-                                <Link to='platform-status' className='text-light text-small-3 pt-2'>Platform Status</Link>
-                                <Link to='partners' className='text-light text-small-3 pt-2'>Partners</Link>
+                                {/* <Link to='platform-status' className='text-light text-small-3 pt-2'>Platform Status</Link> */}
+                                {/* <Link to='partners' className='text-light text-small-3 pt-2'>Partners</Link> */}
                                 <Link to='newsletter' className='text-light text-small-3 pt-2'>Newsletter</Link>
                             </div>
                             <div className="d-flex col-lg-3 col-md-6 col-6 flex-column ps-0 pt-lg-0 pt-3">
                                 <span className="fw-600">Company</span>
                                 <Link to='about' className='text-light text-small-3 pt-2'>About</Link>
-                                <Link to='carrers' className='text-light text-small-3 pt-2'>Careers</Link>
+                                {/* <Link to='carrers' className='text-light text-small-3 pt-2'>Careers</Link> */}
                             </div>
                         </div>
                     </div>

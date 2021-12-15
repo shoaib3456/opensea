@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import { BsSuitHeart, BsShareFill, BsSuitHeartFill, BsArrowUpRightCircleFill, BsFillGrid3X2GapFill } from 'react-icons/bs'
 import { RiShareBoxLine } from 'react-icons/ri'
 import { FaList } from 'react-icons/fa'
@@ -15,10 +16,10 @@ export default function Details() {
                 <div className="row mx-0 mt-5">
                     <div className="col-lg-5 col-12 order-lg-1 order-2 mt-lg-0 mt-3">
                         <div className="card card-dark d-lg-flex d-none">
-                            <div className="card-footer">
+                            {/* <div className="card-footer">
                                 <BsSuitHeart className="text-faded" />
                                 <span className="text-faded text-small ms-2">36</span>
-                            </div>
+                            </div> */}
                             <img src={process.env.PUBLIC_URL + "images/monkey.png"} class="card-img-top" />
                         </div>
 
@@ -85,7 +86,7 @@ export default function Details() {
                         <div className="d-flex align-items-center justify-content-between pt-2">
                             <a href="" className="text-small-2">Ape Kids Club (AKC)</a>
                             <div className="social-icons">
-                                <a href=""><RiShareBoxLine /></a>
+                                {/* <a href=""><RiShareBoxLine /></a> */}
                                 <a href=""><BsShareFill /></a>
                             </div>
                         </div>
@@ -94,8 +95,8 @@ export default function Details() {
                             <span className="text-faded text-small-2 pe-2 ">Owned by</span>
                             <a href="" className="text-small-2">NFT_Sniffer</a>
 
-                            <BsSuitHeartFill className="text-faded ms-4" />
-                            <span className="text-faded text-small-2 ms-2">78 Followers</span>
+                            {/* <BsSuitHeartFill className="text-faded ms-4" /> */}
+                            {/* <span className="text-faded text-small-2 ms-2">78 Followers</span> */}
                         </div>
                         <Accordion className="mt-4" defaultActiveKey="0">
                             <Accordion.Item variant="dark" eventKey="0" className="rounded-accourdian">
@@ -113,7 +114,14 @@ export default function Details() {
                                         </div>
                                     </div>
 
-                                    <button className="btn-1 fw-700 mt-1 col-lg-8 col-12">Buy Now</button>
+                                    <div className="row mx-0">
+                                        <div className="col-6 px-0">
+                                            <button className="btn-1 fw-700 mt-1 w-100">Buy Now</button>
+                                        </div>
+                                        <div className="col-6 pe-0">
+                                            <button className="btn-dark fw-700 mt-1 w-100">Make offer</button>
+                                        </div>
+                                    </div>
                                 </Accordion.Body>
                             </Accordion.Item>
                         </Accordion>
@@ -163,6 +171,50 @@ export default function Details() {
                         </Accordion>
                     </div>
                 </div>
+
+                <div className="col-12 px-2">
+                    <Accordion className="mt-3" defaultActiveKey="0">
+                        <Accordion.Item variant="dark" eventKey="0" className="rounded-accourdian">
+                            <Accordion.Header  ><span className="text-small-3  d-flex align-items-center">Item Activity </span></Accordion.Header>
+                            <Accordion.Body className="p-0">
+                                <div className="table-head">
+                                    <div className="row mx-0">
+                                        <div className="col-3 text-small-2 d-flex ps-2 px-0">Event</div>
+                                        <div className="col text-small-2 d-flex  px-0"> Price</div>
+                                        <div className="col text-small-2 d-flex  px-0">From</div>
+                                        <div className="col text-small-2 d-flex  px-0">To</div>
+                                        <div className="col  text-small-2 d-flex px-0">Date</div>
+                                    </div>
+                                </div>
+                                <div className="table-data">
+                                    <div className="row mx-0">
+                                        <div className="col-3 text-small-2 d-flex ps-2 px-0">
+                                      
+                                            <span className="fw-500 ms-1">Transfer</span>
+                                        </div>
+                                        <div className="col text-small-2 d-flex  px-0 "><img src={process.env.PUBLIC_URL + "images/eth.svg"} className="eth-small me-1 " /> $0.01</div>
+                                        <div className="col text-small-2 d-flex  px-0 text-faded"> <Link to=''>AEYUWH</Link> </div>
+                                        <div className="col text-small-2 d-flex  px-0 text-faded"> <Link to=''>AEYUWH</Link> </div>
+                                        <div className="col text-small-2 d-flex  px-0 text-faded"> <Link to=''>4 days ago</Link> </div>
+                                    </div>
+                                </div>
+                                <div className="table-data">
+                                    <div className="row mx-0">
+                                        <div className="col-3 text-small-2 d-flex ps-2 px-0">
+                                      
+                                            <span className="fw-500 ms-1">Sale</span>
+                                        </div>
+                                        <div className="col text-small-2 d-flex  px-0 "><img src={process.env.PUBLIC_URL + "images/eth.svg"} className="eth-small me-1 " /> $0.01</div>
+                                        <div className="col text-small-2 d-flex  px-0 text-faded"> <Link to=''>AEYUWH</Link> </div>
+                                        <div className="col text-small-2 d-flex  px-0 text-faded"> <Link to=''>AEYUWH</Link> </div>
+                                        <div className="col text-small-2 d-flex  px-0 text-faded"> <Link to=''>4 days ago</Link> </div>
+                                    </div>
+                                </div>
+                            </Accordion.Body>
+                        </Accordion.Item>
+                    </Accordion>
+                </div>
+
                 <div className="col-12 px-2">
                     <Accordion className="mt-3" defaultActiveKey="0" >
                         <Accordion.Item variant="dark" eventKey="0" className="rounded-accourdian">

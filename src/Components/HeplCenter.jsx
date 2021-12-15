@@ -3,8 +3,8 @@ import { AiOutlineSearch } from "react-icons/ai";
 export default function HeplCenter() {
   return (
     <>
-      <div className="background row justify-content-center align-items-center">
-        <div className=" col-lg-6 col-11 ws-input-box mt-lg-0 mt-3 py-3">
+      <div className="background row w-100 mx-0  px-4 justify-content-center align-items-center">
+        <div className=" col-lg-6  ws-input-box mt-lg-0 mt-3 py-3">
           <AiOutlineSearch />
           <input
             type="text"
@@ -15,7 +15,7 @@ export default function HeplCenter() {
 
       <div className="container">
         <div className="row mx-0 mt-5">
-          <div className="col-lg-4 col-md-3 p-3 col-12">
+          <div className="col-lg-4 col-md-6 p-3 col-12">
             <div className="explore-card">
               <div className="d-flex justify-content-center align-items-center flex-column py-3">
                 <span className="fw-600 fs-5">Getting Started</span>
@@ -26,7 +26,7 @@ export default function HeplCenter() {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-3 p-3 col-12">
+          <div className="col-lg-4 col-md-6 p-3 col-12">
             <div className="explore-card">
               <div className="d-flex justify-content-center align-items-center flex-column py-3">
                 <span className="fw-600 fs-5">Getting Started</span>
@@ -37,7 +37,7 @@ export default function HeplCenter() {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-3 p-3 col-12">
+          <div className="col-lg-4 col-md-6 p-3 col-12">
             <div className="explore-card">
               <div className="d-flex justify-content-center align-items-center flex-column py-3">
                 <span className="fw-600 fs-5">Getting Started</span>
@@ -48,7 +48,7 @@ export default function HeplCenter() {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-3 p-3 col-12">
+          <div className="col-lg-4 col-md-6 p-3 col-12">
             <div className="explore-card">
               <div className="d-flex justify-content-center align-items-center flex-column py-3">
                 <span className="fw-600 fs-5">Getting Started</span>
@@ -59,7 +59,7 @@ export default function HeplCenter() {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-3 p-3 col-12">
+          <div className="col-lg-4 col-md-6 p-3 col-12">
             <div className="explore-card">
               <div className="d-flex justify-content-center align-items-center flex-column py-3">
                 <span className="fw-600 fs-5">Getting Started</span>
@@ -70,7 +70,7 @@ export default function HeplCenter() {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-3 p-3 col-12">
+          <div className="col-lg-4 col-md-6 p-3 col-12">
             <div className="explore-card">
               <div className="d-flex justify-content-center align-items-center flex-column py-3">
                 <span className="fw-600 fs-5">Getting Started</span>

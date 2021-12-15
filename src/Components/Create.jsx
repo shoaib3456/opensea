@@ -54,7 +54,7 @@ export default function Create() {
                         </div>
                         <button className="add-btn">+</button>
                     </div>
-                    <div className="d-flex align-items-start pt-4 border-bottom pb-3">
+                    {/* <div className="d-flex align-items-start pt-4 border-bottom pb-3">
                         <div className="icon pe-3">
                             <AiFillStar className="fs-5" />
                         </div>
@@ -63,8 +63,8 @@ export default function Create() {
                             <span>Numerical traits that show as a progress bar</span>
                         </div>
                         <button className="add-btn">+</button>
-                    </div>
-                    <div className="d-flex align-items-start pt-4 border-bottom pb-3">
+                    </div> */}
+                    {/* <div className="d-flex align-items-start pt-4 border-bottom pb-3">
                         <div className="icon pe-3">
                             <ImStatsBars className="fs-5" />
                         </div>
@@ -73,8 +73,8 @@ export default function Create() {
                             <span>Numerical traits that just show as numbers</span>
                         </div>
                         <button className="add-btn">+</button>
-                    </div>
-                    <div className="d-flex align-items-start pt-4 border-bottom pb-3">
+                    </div> */}
+                    {/* <div className="d-flex align-items-start pt-4 border-bottom pb-3">
                         <div className="icon pe-3">
                             <BiLockOpenAlt className="fs-5" />
                         </div>
@@ -88,7 +88,7 @@ export default function Create() {
                                 <span className="slider round"></span>
                             </label>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="d-flex align-items-start pt-4 border-bottom pb-3">
                         <div className="icon pe-3">
                             <AiOutlineWarning className="fs-5" />

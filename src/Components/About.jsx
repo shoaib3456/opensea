@@ -1,4 +1,7 @@
 import React from "react";
+import { Carousel } from '@trendyol-js/react-carousel';
+import ExploreCard from "./Elements/ExploreCard";
+import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 
 export default function About() {
   return (
@@ -115,7 +118,7 @@ export default function About() {
       </h6>
       <div className="row mx-0">
         <div className="col-lg-6 col-12">
-          <img src="https://static.opensea.io/about/founders.png" alt="" />
+          <img src="https://static.opensea.io/about/founders.png" className="img-fluid" alt="" />
         </div>
         <div className="col-lg-6 col-12">
           <p className="text-faded pt-5">
@@ -156,65 +159,80 @@ export default function About() {
           </p>
         </div>
       </div>
-      <h2 class="text-center fw-600 fs-1">
+      <h2 class="text-center fw-600 fs-1 pt-5 mt-lg-5 mt-4">
         Backed by top firms & industry leaders
       </h2>
       <h6 class="text-center text-faded pt-2">
-        {" "}
         who are helping us pave the way towards a brand new digital economy
       </h6>
 
       <div classname="container">
         <div className=" row mx-0 my-5 pb-51">
-          <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2"> 
+          <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2">
             <img
               src="https://static.opensea.io/about/vc-andressen-horowitz.svg"
-              alt="" className="w-75"/></div>
-               <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2"> 
+              alt="" className="w-75" /></div>
+          <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2">
             <img src="https://static.opensea.io/about/vc-coinbase.svg" alt="" className="w-75" /></div>
-            <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2"> 
+          <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2">
             <img
               src="https://static.opensea.io/about/vc-ycombinator.svg"
-              alt="" className="w-75"/></div>
-             <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2"> 
+              alt="" className="w-75" /></div>
+          <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2">
             <img
               src="https://static.opensea.io/about/vc-trust-wallet.svg"
               alt="" className="w-75"
             /></div>
-             <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2"> 
+          <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2">
             <img src="https://static.opensea.io/about/vc-dapper.svg" alt="" className="w-75" /></div>
-            <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2"> 
+          <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2">
             <img
               src="https://static.opensea.io/about/vc-quantstamp.svg"
               alt="" className="w-75"
             /></div>
-         
+
           <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2">
             <img
               src="https://static.opensea.io/about/vc-blockstack.svg"
               alt="" className="w-75"
             /></div>
-            <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2">
+          <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2">
             <img src="https://static.opensea.io/about/vc-NFTKred.svg" alt="" className="w-75" /></div>
-             <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2">
+          <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2">
             <img
               src="https://static.opensea.io/about/vc-founders-fund.svg"
               alt="" className="w-75"
             /></div>
-            <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2">
+          <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2">
             <img
               src="https://static.opensea.io/about/vc-blockchain-capital.svg"
               alt="" className="w-75"
             /></div>
-             <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2">
+          <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2">
             <img
               src="https://static.opensea.io/about/vc-pascal-capital.svg"
               alt="" className="w-75"
             /></div>
-                <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2">
-            <img src="https://static.opensea.io/about/vc-1c.svg" alt="" className="w-25"/>
+          <div className=" col-lg-2 col-md-6 col-12 d-flex justify-content-center align-items-centre p-2">
+            <img src="https://static.opensea.io/about/vc-1c.svg" alt="" className="w-25" />
           </div>
         </div>
+      </div>
+
+
+      <h2 class="text-center fw-600 fs-1 pt-5 mt-lg-5 mt-4">
+        You might have read about us in the news
+      </h2>
+      <h6 class="text-center text-faded pt-2">
+      If not, here are just a few stories about OpenSea</h6>
+      <div class="row mx-0 w-100 my-5  ">
+        <Carousel responsive={false} show={3} slide={1} infinite={false} transition={0.5} rightArrow={<div className="arrow-right"><MdKeyboardArrowRight /></div>} leftArrow={<div className="arrow-right"><MdKeyboardArrowLeft /></div>}>
+          <ExploreCard slick={1} />
+          <ExploreCard slick={1} />
+          <ExploreCard slick={1} />
+          <ExploreCard slick={1} />
+          <ExploreCard slick={1} />
+        </Carousel >
       </div>
     </div>
   );

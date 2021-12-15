@@ -20,10 +20,10 @@ export default function Card1(props) {
                     </div>
                     <span className="text-faded text-small d-flex justify-content-end">6 days left</span>
                 </div>
-                <div className="card-footer">
+                {/* <div className="card-footer">
                     <BsSuitHeart />
                     <span className="text-faded text-small ms-2">36</span>
-                </div>
+                </div> */}
             </div>
         </div>
     )
